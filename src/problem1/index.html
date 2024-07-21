@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUM TO N</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculate the sum from 1 to n</h1>
+
+        <div class="select-container">
+            <label for="function-select">Select function:</label>
+            <select id="function-select">
+                <option value="sum_to_n_a">sum_to_n_a</option>
+                <option value="sum_to_n_b">sum_to_n_b</option>
+                <option value="sum_to_n_c">sum_to_n_c</option>
+            </select>
+        </div>
+
+        <label for="input-n">Enter value n:</label>
+        <input type="number" id="input-n" value="0">
+
+        <button id="calculate-button">Calculate</button>
+        <div class="result" id="result">Result: 0</div>
+    </div>
+
+    <!-- index.js -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-top: 40px;
+    gap: 40px;
+    width: 100%;
+}
+
+.brand-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 100px;
+}
+.brand-content>h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.brand-content>p{
+ color: #575a7b;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.brand-card-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.brand-card>img{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+
+.order-brand{
+    font-size: 50px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.05);
+    font-weight: 800;
+}
+
+.brand-card-text>p{
+    color: #575a7b;
+}

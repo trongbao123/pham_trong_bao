@@ -1,0 +1,262 @@
+@import "../../App.css";
+
+.footer-top {
+    margin-bottom: -70px;
+    position: relative;
+    z-index: 9;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(5, 5, 5, 0.1);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x-sm));
+    margin-left: calc(-.5* var(--bs-gutter-x-sm));
+}
+
+.col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+.content-footer-top {
+    margin-bottom: 0;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: var(--bs-color-black-100);
+}
+
+.text-capitalize-sub {
+    width: 90%;
+    margin-bottom: 0;
+    color: var(--bs-color-gray-100);
+}
+
+.col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+    position: relative;
+    z-index: 90
+}
+
+.quform-elements-footer {
+    zoom: 1;
+    width: 80%;
+}
+
+.quform-elements-footer:before,
+.quform-elements-footer:after {
+    content: "";
+    display: table;
+}
+
+.quform-elements-footer:after {
+    clear: both;
+}
+
+.newsletter-form .quform-elements-footer {
+    position: relative;
+}
+
+.col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.col-md-12>.quform-element {
+    height: 1px;
+    height: auto;
+    min-height: 1px;
+    margin-bottom: 0 !important;
+}
+
+.col-md-12>.quform-element::before,
+.col-md-12>.quform-element::after {
+    content: "";
+    display: table;
+}
+
+.col-md-12>.quform-element::after {
+    clear: both;
+}
+
+.quform-input {
+    position: relative;
+}
+
+.newsletter-form.newsletter-custom input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 40px;
+    min-height: auto;
+    padding: 0.5rem 4rem 0.5rem 1rem;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input[type="text"] {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.newsletter-form .quform-submit-inner.radius-10 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.newsletter-form .quform-submit-inner {
+    position: absolute;
+    right: -85px;
+    top: 10px;
+    width: auto;
+    height: 48px;
+}
+
+.quform-submit-inner {
+    float: none;
+}
+
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.text-primary {
+    color: #f9b707 !important;
+}
+
+.px-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.quform-submit-inner>.btn {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: var(--bs-border-width);
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: var(--bs-border-radius);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+}
+
+.newsletter-form i {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.fa,
+.fas {
+    font-weight: 900;
+}
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-paper-plane:before {
+    content: "\f1d8";
+}
+
+.newsletter-form .quform-loading-wrap {
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.quform-loading-wrap {
+    float: none;
+}
+
+.quform-loading-wrap {
+    display: none;
+    float: left;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.quform-loading-wrap .quform-loading {
+    display: inline-block;
+}
+
+.quform-loading-wrap .quform-loading {
+    display: block;
+    width: 30px;
+    height: 10px;
+    text-indent: -9999px;
+    background: transparent url(https://crypto.websitelayout.net/quform/images/default-loading.gif) no-repeat center center;
+}

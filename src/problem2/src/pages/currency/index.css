@@ -1,0 +1,134 @@
+.currency {
+    background: #212529;
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 10px;
+}
+
+.col-6 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 40px;
+    gap: 20px;
+    width: 100%;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px;
+}
+.cry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.cry>h1 {
+    font-size: 3.5rem;
+    width: 86%;
+}
+
+.cry>p {
+    font-size: 1.1rem;
+    width: 65%;
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-bottom: 2.2rem;
+}
+
+.mb-3 {
+    margin-bottom: 2rem !important;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    padding: 1.9rem;
+    margin-bottom: 80px;
+}
+
+.form>h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form>.quform-elements::before {
+    content: " ";
+    display: table;
+}
+
+form>.quform-elements::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.ant-form-item {
+    margin-bottom: 2rem;
+}
+.ant-input {
+    height: 45px;
+     margin-bottom:10px;
+}
+
+.ant-select {
+    height: 45px;
+    width: 100% !important;
+   margin-bottom:10px;
+}
+.error{
+    margin-left: 15px;
+    color: red;
+  
+}
+.col-12{
+    width: 100%;
+}
+.slick-head>h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.item-carousel{
+    height: 80px;
+}
+.item-carousel>img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+
+.read-more{
+    color: #fff;
+}
+
+.read-more:hover{
+    color: #f9b707;
+}
+
+.token-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.results{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      margin-bottom: 2rem;
+      height: 10px;
+}
+
+.results>p{
+    color: #515151;
+    font-size: 1.2rem;
+    font-weight: 800;
+}

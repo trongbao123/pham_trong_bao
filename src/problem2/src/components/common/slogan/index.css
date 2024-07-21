@@ -1,0 +1,43 @@
+.section-heading {
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.section-heading:before {
+    content: attr(data-name);
+    font-size: 180px;
+    line-height: 180px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #ededed;
+}
+
+.section-heading span {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #f9b707;
+}
+
+.section-heading h2 {
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 40px;
+    font-size: 36px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-family: "Exo 2", sans-serif;
+}

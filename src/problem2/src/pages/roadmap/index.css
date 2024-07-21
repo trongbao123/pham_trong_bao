@@ -1,0 +1,43 @@
+.roadmap-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    transition: .3s;
+    cursor: pointer;
+    line-height: 1.8rem;
+    justify-content: center;
+}
+
+.roadmap-item>h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+    background: black;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.roadmap-item>p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    background: rgba(249, 183, 7, 0.9);
+    width: 80%;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    height: 100px;
+}

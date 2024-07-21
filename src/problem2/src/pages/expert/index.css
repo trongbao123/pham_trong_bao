@@ -1,0 +1,42 @@
+.row-expert{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    gap: 20px;
+    width: 100%;
+}
+
+.card-expert{
+    border-radius: 10px;
+}
+.card-expert>.card-body{
+    padding: 0 0 0 0 !important;
+}
+
+.card-expert>.card-body>.img-expert>img{
+    border-radius: 10px;
+}
+
+.text-expert{
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 9px 11px 29px rgba(125, 138, 152, 0.15);
+    padding: 20px;
+    transition: .3s;
+    cursor: pointer;
+    line-height: 1.8rem;
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 1px #eee;
+}
+
+.text-expert>h4{
+    font-weight: 500;
+}
+
+.text-expert>h2{
+    font-weight: 500;
+}

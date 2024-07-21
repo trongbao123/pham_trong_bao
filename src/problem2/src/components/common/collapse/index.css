@@ -1,0 +1,82 @@
+.card-collapse {
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+}
+
+.card-header-collapse {
+    border: 0;
+    padding: 0;
+    background: none;
+}
+.accordion-button {
+    color: #00204c !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    text-align: left !important;
+    white-space: normal !important;
+    box-shadow: none !important;
+    line-height: 28px !important;
+    text-transform: capitalize !important;
+    padding: 15px 20px !important;
+    text-decoration: none !important;
+    background: none !important;
+    border-top: 1px solid #ededed !important;
+    border-bottom: 1px solid #ededed !important;
+    border-radius: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    cursor: pointer;
+    justify-content: space-between !important;
+}
+.accordion-button .border-primary{
+    border-color: #ededed !important;
+}
+.accordion-collapse{
+    background: #ffffff;
+    color: #282b2d;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-30%);
+    height: 0;
+}
+
+.accordion-collapse.show{
+    transform: translateY(0);
+    height: auto;
+}
+
+.accordion-button
+.accordion-collapse
+.collapsed {
+  transform: translateY(-50%);
+  height: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.accordion-button>img{
+    width: 20px;
+    height: 20px;
+}
+
+.open{
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.close{
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-body-collapse {
+    font-size: 16px;
+    padding: 15px 20px 0 20px;
+    line-height: 28px;
+}

@@ -1,0 +1,139 @@
+ @import "../../App.css";
+.row-footer-bot {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+}
+
+.footer-logo {
+    max-width: 214px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 1rem
+}
+
+.footer-logo>img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+footer p {
+    color: #575a7b;
+    margin: 0 0 20px;
+    line-height: 1.7;
+
+}
+
+.social-icon-style1 {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.social-icon-style1 li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icon-style1 li a {
+    font-size: 14px;
+    background: #eee;
+    width: 35px;
+    color: #222;
+    height: 35px;
+    border-radius: 10px;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+}
+
+.h5 {
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: #282b2d;
+}
+
+.footer-list-style1 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list-style1 li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.footer-style1 .footer-list-style1 li a {
+    color: #575a7b;
+    transition-duration: .3s;
+    margin-left: 10px;
+}
+
+.contact-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.align-items-baseline {
+        color: #575a7b;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.contact-list li span {
+    color: #575a7b;
+}
+
+[class^="ti-"], [class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.align-items-baseline a {
+    color: #575a7b;
+    margin-left: 10px;
+}
+
+.container-pow{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.powered{
+    text-align: center;
+    margin-top: 4.5rem;
+    border-color: rgba(0, 0, 0, 0.1);
+        padding-top: 1.5rem ;
+            padding-bottom: 1.5rem;
+                border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+}
+
+.powered>p >a{
+    color: #575a7b;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.powered>p >a:hover{
+    color: #f9b707 ;
+    text-decoration: underline;
+}

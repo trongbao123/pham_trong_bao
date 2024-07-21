@@ -1,0 +1,61 @@
+@import "../../../App.css";
+
+.page-title {
+    display: inline-block;
+    border-left: 6px solid #f9b707;
+    padding: 20px 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+.page-title>h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.breadcrumb {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-padding-x: 0;
+    --bs-breadcrumb-padding-y: 0;
+    --bs-breadcrumb-margin-bottom: 1rem;
+    --bs-breadcrumb-bg: ;
+    --bs-breadcrumb-border-radius: ;
+    --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+    --bs-breadcrumb-item-padding-x: 0.5rem;
+    --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+    margin-bottom: var(--bs-breadcrumb-margin-bottom);
+    font-size: var(--bs-breadcrumb-font-size);
+    list-style: none;
+    background-color: var(--bs-breadcrumb-bg);
+    border-radius: var(--bs-breadcrumb-border-radius);
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb ul li {
+    display: inline-block;
+    line-height: 1;
+}
+
+ .breadcrumb ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+

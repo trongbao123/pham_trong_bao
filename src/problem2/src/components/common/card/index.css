@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 9px 11px 29px rgba(125, 138, 152, 0.15);
+}
+
+.card-body {
+   display: flex;
+   flex-direction: column;
+   padding: 15px 20px 0 20px;
+   line-height: 28px;
+}

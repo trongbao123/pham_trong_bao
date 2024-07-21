@@ -1,0 +1,66 @@
+
+.butn.primary-butn.md {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+.butn{
+    background-color: #222;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.4s ease-in-out 0s;
+    cursor: pointer;
+}
+.butn.primary-butn {
+    background: #f9b707;
+    border-radius: 4px;
+}
+
+.border-primary {
+    opacity: 1 ;
+    border-color: #f9b707 ;
+}
+
+.butn:before {
+    content: "";
+    height: 100%;
+    width: 0;
+    border-radius: 4px;
+    background-color: #f9b707;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: all .45s ease-out;
+}
+.butn.primary-butn:before {
+    content: "";
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.butn.primary-butn:hover{
+    color: #f9b707;
+    border:solid 1px #f9b707;
+}
+
+.butn:hover:before{
+    width: 100%;
+    left: 0;
+}
+

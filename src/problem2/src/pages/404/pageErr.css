@@ -1,0 +1,43 @@
+.err-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-size: 120px;
+  background: #add9ff;
+}
+.err-page > .err-image {
+  width: 40vh;
+  height: 40vh;
+}
+.err-page > .err-image > img {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.err-page > h2 {
+  font-size: 20vh;
+  line-height: 20vh;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 5px 5px 0px #4d7bbe;
+}
+
+.err-page > p {
+  color: #7b95d2;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.err-page > p > a {
+  color: #7b95d2;
+  text-decoration: underline;
+}
+
+.err-page > p > a:hover {
+  color: #5d7ecc;
+}
