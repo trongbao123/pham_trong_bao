@@ -72,17 +72,17 @@ To run the application, please follow the steps below:
 This is what I see error in task 3 following is my detailed description
 
 Unnecessary Re-computations:
-getPriority:
+1. getPriority:
     -This function is called multiple times within the useMemo hook and the map function for each balance. 
     -This leads to redundant calculations, especially if the getPriority function is computationally expensive.
-sortedBalances: 
+2. sortedBalances: 
     -The useMemo hook is used to memoize the sortedBalances array, but the dependency array includes prices, which is unnecessary. 
     -The sorting logic relies only on balances, so prices should be excluded.
     Inefficient Sorting:
-sort: 
+3. sort: 
     -The sorting logic within the useMemo hook uses a nested if statement and multiple calls to getPriority. 
     -This could be simplified and potentially optimized by using a single comparison function.
-Redundant Mapping:
-formattedBalances: 
+4.  Redundant Mapping:
+4.1 formattedBalances: 
     -This array is created by mapping over sortedBalances to add a formatted property. 
     -However, this formatting can be done directly within the map function that creates the rows array, eliminating the need for a separate mapping step.
