@@ -14,7 +14,9 @@ type CarouselProps = {
     speed?: number,
     autoplaySpeed?: number,
     cssEase?: string,
-    dots?: boolean
+    dots?: boolean,
+    className?: string,
+    responsive?: any
 }
 const Carousel: React.FC<CarouselProps & Settings> = ({
     children,
@@ -28,6 +30,33 @@ const Carousel: React.FC<CarouselProps & Settings> = ({
     autoplaySpeed = 2000,
     dots = false,
     cssEase = "linear",
+    className,
+    responsive = [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: dots
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ],
     ...rest
 }) => {
 
@@ -43,36 +72,11 @@ const Carousel: React.FC<CarouselProps & Settings> = ({
         speed,
         autoplaySpeed,
         cssEase,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+        responsive
     };
 
     return (
-        <div className="slider-container">
+        <div className={`slider-container ${className}`}>
             <Slider {...settings}>
                 {children}
             </Slider>

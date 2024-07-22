@@ -20,3 +20,16 @@
     cursor: pointer;
     line-height: 1.8rem;
 }
+
+
+@media screen and (max-width: 500px) {
+    .row-service {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .row-service {
+        grid-template-columns: 1fr 1fr;
+    }
+}

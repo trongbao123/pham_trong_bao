@@ -45,7 +45,7 @@ const Collapse: React.FC<CollapseProps> = ({
                     onClick={handleToggle}
                     {...rest}
                 >
-                    <span> {title}</span>
+                    <span className='collapse-title'> {title}</span>
                     <img
                         src={DownIcon}
                         alt="down icon"

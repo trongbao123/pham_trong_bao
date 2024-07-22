@@ -40,3 +40,22 @@
 .text-expert>h2{
     font-weight: 500;
 }
+
+@media screen and (max-width: 414px) {
+    .card-expert{
+        width: 100% !important;
+    }
+    .row-expert {
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 1280px) {
+    .card-expert{
+        width: 100% !important;
+    }
+    .row-expert {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+

@@ -73,3 +73,17 @@
     gap: 10px;
     margin-top: 1.5rem;
 }
+
+@media screen and (max-width: 700px) {
+    .row-blog{
+        grid-template-columns: 1fr;
+    }
+    
+    .card-blog-right{
+        align-items: start;
+    }
+
+    .h5{
+        font-size: 1rem;
+    }
+}

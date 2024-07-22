@@ -21,6 +21,7 @@ const FrequentlyAskedQuestions: React.FC<Props> = (props) => {
                 title={item.title}
                 defaultOpen={true}
                 width={'100%'}
+                className="collapse-container"
             >
                 {item.description}
             </Collapse>
@@ -34,12 +35,14 @@ const FrequentlyAskedQuestions: React.FC<Props> = (props) => {
                 title='FAQS'
                 subTitle='Frequently Asked Questions'
                 style={{ marginTop: '50px' }}
+
             />
             <Tab
                 tabList={tabHeader}
                 handleTabClick={handleTabClick}
                 activeTab={activeTab}
                 className="tab-container"
+
             >
                 <div className="tab-content">
                     {renderTabList()}

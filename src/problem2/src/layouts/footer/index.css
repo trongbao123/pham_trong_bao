@@ -137,3 +137,20 @@ footer p {
     color: #f9b707 ;
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 480px){
+    .row-footer-bot {
+        grid-template-columns: 2fr ;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1119px){
+    .row-footer-bot {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    .about-us-footer{
+        padding-top: 20px;
+    }
+}

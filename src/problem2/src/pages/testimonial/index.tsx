@@ -5,6 +5,24 @@ import Carousel from '../../components/common/carousel';
 import { testimonialData } from '../../data/mockData';
 import { MessageOutlined } from '@ant-design/icons';
 const Testimonial = () => {
+    const responsive = [
+        {
+            breakpoint: 1023,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
     return (
         <div id="testimonials" className="container">
             <Slogan
@@ -15,12 +33,15 @@ const Testimonial = () => {
                 style={{ marginTop: '50px' }}
             />
             <Carousel
+                responsive={responsive}
                 slidesToShow={2}
                 slidesToScroll={2}
                 arrows={false}
                 autoplaySpeed={6000}
                 speed={1000}
                 dots={true}
+                autoplay={false}
+                className="carousel-testimonial"
             >
                 {renderTestimonial()}
             </Carousel>

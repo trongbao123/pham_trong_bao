@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
 import './index.css'
 import { Link } from 'react-router-dom'
+import { CaretDownOutlined } from '@ant-design/icons'
 
 type DropDownProps = {
     children?: React.ReactNode
     className?: string,
     href?: any,
-    title?: string
+    title?: string,
+    [key: string]: any
 }
 const DropDown: React.FC<DropDownProps> = ({
     children,
     className,
     href,
-    title
+    title,
+    ...rest
 }) => {
     const [showDropdown, setShowDropdown] = useState(false);
+
 
     const handleMouseEnter = () => {
         setShowDropdown(true);
@@ -27,10 +31,11 @@ const DropDown: React.FC<DropDownProps> = ({
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className={`has-sub ${className}`}
+            className={`has-sub ${className} `}
+            {...rest}
         >
             <span className='submenu-button'></span>
-            <Link to={href}>{title}</Link>
+            <Link to={href}>{title} <CaretDownOutlined /></Link>
             {showDropdown && (
                 <ul className="sub-menu">{children}</ul>
             )}

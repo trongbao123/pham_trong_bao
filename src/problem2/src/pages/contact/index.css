@@ -260,3 +260,29 @@ button {
     text-indent: -9999px;
     background: transparent url(https://crypto.websitelayout.net/quform/images/default-loading.gif) no-repeat center center;
 }
+
+@media screen and (max-width: 414px) {
+    .col-lg-7 {
+        width: 100%;
+    }
+    .row-footer{
+        flex-direction: column;
+    } 
+    .col-lg-5{
+        width: 90%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 800px){
+    .col-lg-7 {
+        width: 100%;
+    }
+    .row-footer{
+        flex-direction: column;
+    } 
+    .col-lg-5{
+        width: 90%;
+        margin-top: 50px;
+    }
+}

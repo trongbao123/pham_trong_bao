@@ -11,6 +11,7 @@ const renderCard = () => {
             <Card
                 key={item.id}
                 width={300}
+                className="card-market"
             >
                 <div className="icon-market">
                     <img src={item.icon} alt="img" />
@@ -38,6 +39,7 @@ const Market = () => {
                 title='BUY & SELL BITCOIN'
                 subTitle='Track The Live Market'
                 style={{ marginTop: '150px' }}
+                className="slogan-market"
             />
             <div className="row">
                 {renderCard()}

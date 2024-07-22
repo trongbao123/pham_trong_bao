@@ -1,7 +1,6 @@
-
 .has-sub {
     padding-right: 13px;
-     margin-left: 10px;
+    margin-left: 10px;
     float: left;
     text-align: center;
     -webkit-transition: all .5s ease;
@@ -15,15 +14,16 @@
     display: block;
     font-size: 15px;
     font-weight: 700;
-    padding: 21px 0.5rem;
+    padding: 21px 0.1rem;
     color: #282b2d;
-    letter-spacing: 0.8px;
+    letter-spacing: 0px;
     text-transform: uppercase;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
-        color: #fff;
+    color: #fff;
 }
+
 .has-sub>a:hover {
     color: #f9b707;
 }
@@ -33,11 +33,11 @@
     color: #9d9d9d;
     font-size: 16px;
     font-weight: 700;
-padding: 8px 15px 8px 10px;
+    padding: 8px 15px 8px 5px;
     text-decoration: none;
 }
 
-.has-sub>a:after {
+/* .has-sub>a:after {
     position: absolute;
     top: 8px;
     right: 0px;
@@ -54,7 +54,7 @@ padding: 8px 15px 8px 10px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-}
+} */
 
 .has-sub>a:after {
     border-color: transparent #fff #fff transparent;
@@ -73,7 +73,7 @@ padding: 8px 15px 8px 10px;
     text-align: left;
     opacity: 0;
     margin-top: 10px;
-    transition: all .7s ease ;
+    transition: all .7s ease;
 }
 
 .has-sub:hover>ul {
@@ -91,7 +91,13 @@ padding: 8px 15px 8px 10px;
     box-shadow: 9px 11px 29px rgba(125, 138, 152, 0.15);
 }
 
- .has-sub>ul {
+.has-sub>ul {
     position: absolute;
     left: -9999px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    .has-sub>a{
+        font-size: 14px;
+    }
 }

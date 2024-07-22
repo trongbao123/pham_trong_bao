@@ -7,6 +7,7 @@ import CurrencyForm from './components/CurrencyForm';
 
 const Currency = () => {
     return (
+
         <div className="currency">
             <div className="container">
                 <div className="col-6">
@@ -24,6 +25,7 @@ const Currency = () => {
                         <h2>We are working with the Best</h2>
                         <Carousel
                             arrows={false}
+                            dots={false}
                         >
                             {renderCarruselItem()}
                         </Carousel>

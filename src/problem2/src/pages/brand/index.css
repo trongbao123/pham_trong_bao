@@ -54,3 +54,22 @@
 .brand-card-text>p{
     color: #575a7b;
 }
+
+
+
+@media screen and (max-width: 1023px) {
+    .row-2{
+        grid-template-columns: 1fr;
+    }
+
+    .brand-content{
+        margin-left: 0;
+    }
+
+    .brand-card-text>h3{
+        font-size: .9rem;
+    }
+    .brand-card-text>p{
+        font-size: .8rem;
+    }
+}

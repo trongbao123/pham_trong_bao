@@ -15,6 +15,7 @@ import {
 import RightIcon from '../../assets/icons/RightIcon';
 export default function Footer() {
     return (
+
         <footer className="footer-style1 bg-light">
             <div className="container">
                 <div className="row-footer-bot">
@@ -38,7 +39,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div >
+                    <div className='about-us-footer'>
                         <h3 className="h5 mb-4">About Us</h3>
                         <ul className="footer-list-style1">
                             <li>

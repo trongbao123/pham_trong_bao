@@ -44,7 +44,6 @@
 }
 
 .rate {
-    width: 45%;
     padding: 10px 15px;
     border-radius: 10px;
     background-color: rgba(249, 183, 7, 0.102);
@@ -52,4 +51,76 @@
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 430px) {
+    .slogan-market {
+        margin-top: 60px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .slogan-market>h2 {
+        font-size: 1.5rem;
+    }
+
+    .market-container {
+        max-width: 414px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .card-market {
+        width: 100% !important;
+    }
+
+    .row {
+        margin-top: 80px ;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1023px) {
+    .slogan-market {
+        margin-top: 80px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .slogan-market>h2 {
+        font-size: 1.5rem;
+    }
+
+    .market-container {
+        max-width: 1023px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-market {
+        width: 100% !important;
+    }
+
+    .row {
+        margin-top: 80px !important;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .rate {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  
+    .market-container {
+        max-width: 1300px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-market {
+        width: 100% !important;
+    }
+
 }
