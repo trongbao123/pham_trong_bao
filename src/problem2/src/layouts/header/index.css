@@ -270,7 +270,9 @@ input[type="text"] {
     }
 
     .show-drawer {
-        display: block !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
     }
 
     .header-right-search {
@@ -378,7 +380,6 @@ input[type="text"] {
     }
 
     .sub-menu {
-        z-index: 10;
         right: 15px;
     }
 }
@@ -390,8 +391,15 @@ input[type="text"] {
         margin: auto;
     }
 
-    .show-drawer {
-        display: block !important;
+       .show-drawer {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-right-search {
+        display: flex;
+        align-items: center;
     }
 
     .header-container {
