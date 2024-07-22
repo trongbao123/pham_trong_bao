@@ -319,6 +319,11 @@ input[type="text"] {
         z-index: 10;
         right: 15px;
     }
+
+    .top-search .input-group-addon {
+        padding-right: 15px;
+
+    }
 }
 
 

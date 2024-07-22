@@ -71,7 +71,7 @@ export default function Header() {
                                 BUY NOW
                             </ButtonCustom>
                             <ButtonCustom className='show-drawer' height={'40px'} width={'50px'} onClick={showDrawer}>
-                                <MenuOutlined style={{ fontSize: '20px' }} />
+                                <MenuOutlined style={{ fontSize: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center' }} />
                             </ButtonCustom>
                         </div>
                     </div>
